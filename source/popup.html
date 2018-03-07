@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>inRiver iPMC Resource Downloader Popup</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        width: 250px;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container div {
+        padding-bottom: 10px;
+      }
+
+      #results {
+        font-weight: bold;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <h1>inRiver Resource Downloader</h1>
+    <div id="container">
+      <div>Choose image configuration:&nbsp;</div>
+      <select id="dropdown">
+        <option selected value="Original">Original</option>
+        <option value="Preview">Preview</option>
+        <option value="Thumbnail">Thumbnail</option>
+        <option value="SmallThumbnail">SmallThumbnail</option>
+      </select>
+      &nbsp;<button id="download-button">Start Download</button>
+    </div>
+    <div><p id="results"></p></div>
+  </body>
+</html>
