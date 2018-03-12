@@ -13,10 +13,9 @@ $("div[entity-type-id='Resource'] div.card-picture").each(function(){
   if(resourceFilename.match(regexSupportedImageConfigs)) {
     config = scriptOptions.config;
   }
-  resourceUrl[3] = resourceUrl[3].replace(resourceUrl[3], config);
   
   var resource = {
-    url: resourceUrl[1] + resourceUrl[3],
+    url: resourceUrl[1] + config,
     filename: resourceFilename
   };
   
