@@ -3,7 +3,7 @@
 
   "name": "inRiver Resource Downloader",
   "description": "This extension allows the user to download all resources from a workarea.",
-  "version": "0.3",
+  "version": "0.4",
 
   "background": {
     "scripts": ["event.js"],

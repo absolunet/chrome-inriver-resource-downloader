@@ -14,6 +14,8 @@
 
       #container div {
         padding-bottom: 10px;
+		display: flex;
+		align-items: center;
       }
 
       #results {
@@ -26,6 +28,10 @@
   <body>
     <h1>inRiver Resource Downloader</h1>
     <div id="container">
+	  <div>
+	  <input type="checkbox" id="selected-only" name="selected-only"></input>
+	  <label for="selected-only">Selected resources only</label>
+	  </div>
       <div>Choose image configuration:&nbsp;</div>
       <select id="dropdown">
         <option selected value="Original">Original</option>

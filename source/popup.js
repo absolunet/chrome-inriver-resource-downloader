@@ -36,7 +36,7 @@ function getCurrentTabUrl(callback) {
 /**
  * Download resources of the current tab.
  *
- * @param {string} config The image configuration to download the resources.
+ * @param {string} config The configurations to download the resources.
  */
  
 function downloadResources(config) {
@@ -49,12 +49,13 @@ function downloadResources(config) {
 
 document.addEventListener('DOMContentLoaded', () => {
   getCurrentTabUrl((url) => {
+    var selectedOnly = document.getElementById('selected-only');
     var dropdown = document.getElementById('dropdown');
     var downloadButton = document.getElementById('download-button');
-
+  
     downloadButton.addEventListener('click', () => {
       downloadButton.disabled = true;
-      downloadResources(dropdown.value);
+      downloadResources({imageConfig:dropdown.value, selectedOnly:selectedOnly.checked});
     });
   });
 });
