@@ -21,6 +21,8 @@ It can take a little while for Chrome to start the download of all the resources
 
 The downloaded resource will be of the selected image configuration unless it is not one of these file types: jpg, jpeg, gif, png, tif, tiff. Then, the original image configuration will be downloaded (i.e.: a PDF file).
 
+To download only a subset of the displayed resources, select them in the UI and check the "Selected only" option.
+
 ## Notes
 The extension is sort of a workaround and could stop working after an update if inRiver makes modifications that change the HTML markup of the workarea page.
 
