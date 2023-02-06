@@ -1,3 +1,7 @@
+# PLEASE NOTE, THIS PROJECT HAS MOVED HERE: https://github.com/valtech-commerce/chrome-inriver-resource-downloader
+
+***
+
 # Chrome extension: inRiver Resource Downloader
 
 ## Installation
